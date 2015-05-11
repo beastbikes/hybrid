@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script type="text/javascript" src="/1.0/embedded.js"></script>
+        <script type="text/javascript">
+            function getDevice() {
+                return embapi.getDevice({
+                    success : function(device) {
+                        document.getElementById('console').innerText = JSON.stringify(device);
+                    },
+                    error   : function(e) {
+                        document.getElementById('console').innerText = (e.stack || e.error);
+                    },
+                });
+            }
+
+            function getUser() {
+                return embapi.getUser({
+                    success : function(user) {
+                        document.getElementById('console').innerText = JSON.stringify(user);
+                    },
+                    error   : function(e) {
+                        document.getElementById('console').innerText = (e.stack || e.error);
+                    },
+                });
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Hello, beast!</h1>
+        <h2 id="console"></h2>
+        <ul>
+            <li><a href="javascript:void(0)" onclick="getDevice()">getDevice</a></li>
+            <li><a href="javascript:void(0)" onclick="getUser()">getUser</a></li>
+        </ul>
+    </body>
+</html>
