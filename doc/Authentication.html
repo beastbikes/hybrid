@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Class: Network</title>
+    <title>JSDoc: Class: Authentication</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Class: Network</h1>
+    <h1 class="page-title">Class: Authentication</h1>
 
     
 
@@ -29,7 +29,7 @@
 <header>
     
         <h2>
-        Network
+        Authentication
         </h2>
         
     
@@ -42,14 +42,14 @@
 
     
 
-    <h4 class="name" id="Network"><span class="type-signature"></span>new Network<span class="signature">()</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="Authentication"><span class="type-signature"></span>new Authentication<span class="signature">()</span><span class="type-signature"></span></h4>
 
     
 
 
 
 <div class="description">
-    The network information
+    The authentication information
 </div>
 
 
@@ -93,7 +93,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="schema.js.html">schema.js</a>, <a href="schema.js.html#line110">line 110</a>
+        <a href="schema.js.html">schema.js</a>, <a href="schema.js.html#line43">line 43</a>
     </li></ul></dd>
     
 
@@ -137,13 +137,13 @@
 
         
             
-<h4 class="name" id="available"><span class="type-signature"></span>available<span class="type-signature"> :Boolean</span></h4>
+<h4 class="name" id="authenticated"><span class="type-signature"></span>authenticated<span class="type-signature"> :Boolean</span></h4>
 
 
 
 
 <div class="description">
-    Indicates whether the network is available
+    Indicates whether the user is authenticated or anonymous
 </div>
 
 
@@ -191,7 +191,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="schema.js.html">schema.js</a>, <a href="schema.js.html#line137">line 137</a>
+        <a href="schema.js.html">schema.js</a>, <a href="schema.js.html#line71">line 71</a>
     </li></ul></dd>
     
 
@@ -209,13 +209,13 @@
 
         
             
-<h4 class="name" id="name"><span class="type-signature"></span>name<span class="type-signature"> :String</span></h4>
+<h4 class="name" id="email"><span class="type-signature"></span>email<span class="type-signature"> :String</span></h4>
 
 
 
 
 <div class="description">
-    The network name
+    The email
 </div>
 
 
@@ -263,7 +263,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="schema.js.html">schema.js</a>, <a href="schema.js.html#line130">line 130</a>
+        <a href="schema.js.html">schema.js</a>, <a href="schema.js.html#line64">line 64</a>
     </li></ul></dd>
     
 
@@ -281,13 +281,13 @@
 
         
             
-<h4 class="name" id="roaming"><span class="type-signature"></span>roaming<span class="type-signature"> :Boolean</span></h4>
+<h4 class="name" id="id"><span class="type-signature"></span>id<span class="type-signature"> :String</span></h4>
 
 
 
 
 <div class="description">
-    Indicates whether the device is currently roaming on this network.
+    The user id
 </div>
 
 
@@ -296,7 +296,7 @@
     <ul>
         <li>
             
-<span class="param-type">Boolean</span>
+<span class="param-type">String</span>
 
 
         </li>
@@ -335,7 +335,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="schema.js.html">schema.js</a>, <a href="schema.js.html#line144">line 144</a>
+        <a href="schema.js.html">schema.js</a>, <a href="schema.js.html#line50">line 50</a>
     </li></ul></dd>
     
 
@@ -353,21 +353,13 @@
 
         
             
-<h4 class="name" id="state"><span class="type-signature"></span>state<span class="type-signature"> :Number</span></h4>
+<h4 class="name" id="session"><span class="type-signature"></span>session<span class="type-signature"> :String</span></h4>
 
 
 
 
 <div class="description">
-    The network state
-<ul>
-<li>0 - Unknown</li>
-<li>1 - Connecting</li>
-<li>2 - Connected</li>
-<li>3 - Suspend</li>
-<li>4 - Disconnecting</li>
-<li>5 - Disconnected</li>
-</ul>
+    The session token
 </div>
 
 
@@ -376,7 +368,7 @@
     <ul>
         <li>
             
-<span class="param-type">Number</span>
+<span class="param-type">String</span>
 
 
         </li>
@@ -415,7 +407,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="schema.js.html">schema.js</a>, <a href="schema.js.html#line159">line 159</a>
+        <a href="schema.js.html">schema.js</a>, <a href="schema.js.html#line78">line 78</a>
     </li></ul></dd>
     
 
@@ -433,19 +425,13 @@
 
         
             
-<h4 class="name" id="type"><span class="type-signature"></span>type<span class="type-signature"> :Number</span></h4>
+<h4 class="name" id="username"><span class="type-signature"></span>username<span class="type-signature"> :String</span></h4>
 
 
 
 
 <div class="description">
-    The network type
-<ul>
-<li>0 - Unknown</li>
-<li>1 - Ethernet</li>
-<li>2 - WIFI</li>
-<li>3 - Cellular</li>
-</ul>
+    The username
 </div>
 
 
@@ -454,7 +440,7 @@
     <ul>
         <li>
             
-<span class="param-type">Number</span>
+<span class="param-type">String</span>
 
 
         </li>
@@ -493,7 +479,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="schema.js.html">schema.js</a>, <a href="schema.js.html#line123">line 123</a>
+        <a href="schema.js.html">schema.js</a>, <a href="schema.js.html#line57">line 57</a>
     </li></ul></dd>
     
 

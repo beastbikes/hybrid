@@ -1,9 +1,9 @@
-# Embedded API
+# Hybrid API
 
-The embedded API is used for interacting between embedded browser and native
-application, it realized by URL intercepting.
+The Hybrid API is used for interacting between web view and native application,
+it realized by URL intercepting.
 
 ## Reference
 
-Please see [here](https://rawgit.com/beastbikes/embedded-api/master/doc/index.html)
+Please see [here](https://rawgit.com/beastbikes/hybrid/master/doc/index.html)
 

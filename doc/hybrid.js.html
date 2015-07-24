@@ -1,16 +1,44 @@
-/**
- * @overview The Embedded JavaScript API Reference
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: hybrid.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: hybrid.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @overview The Hybrid API Reference
  *
- * <p>This reference described the exported REST API for embedded web
- * browser to interact with native application.</p>
+ * &lt;p>This reference described the exported API for web browser to interact
+ * with native application.&lt;/p>
  *
- * <p>Usage:</p>
- * <pre>
- * &lt;script type="text/javascript" src="/1.0/embedded.js"&gt;&lt;script&gt;
- * </pre>
+ * &lt;p>Usage:&lt;/p>
+ * &lt;pre>
+ * &amp;lt;script type="text/javascript" src="/1.0/hybrid.js"&amp;gt;&amp;lt;script&amp;gt;
+ * &lt;/pre>
  *
  * @version 1.0
- * @auther Johnson Lee <g.johnsonlee@gmail.com>
+ * @auther Johnson Lee &lt;g.johnsonlee@gmail.com>
  */
 (function(global) {
 
@@ -45,31 +73,31 @@
         }
     };
 
-    var VERSION_1_0 = '/embapi/1.0';
+    var VERSION_1_0 = '/hybrid/1.0';
 
     /**
-     * <p>The following example shows how to retrieve the current user:</p>
-     * <pre>
-     * embapi.getUser({
-     *     success : function(user) {
-     *         console.log(JSON.stringify(user));
+     * &lt;p>The following example shows how to retrieve the current user:&lt;/p>
+     * &lt;pre>
+     * hybrid.getAuthentication({
+     *     success : function(auth) {
+     *         console.log(JSON.stringify(auth));
      *     },
      *     error : function(e) {
-     *         console.log(e.stack || e.message);
+     *         console.log(e.stack || e.message || e);
      *     },
      * });
-     * </pre>
+     * &lt;/pre>
      *
-     * @namespace embapi
+     * @namespace hybrid
      */
-    global.embapi = global.embapi || {
+    global.hybrid = global.hybrid || {
 
         /**
          * Retrieve the agent information
          *
          * @param options {Object}
          *        A backbone-style options
-         * @memberof embapi
+         * @memberof hybrid
          * @see Agent
          */
         getAgent : function(options) {
@@ -77,15 +105,15 @@
         },
 
         /**
-         * Retrieve the current user
+         * Retrieve the current authentication
          *
          * @param options {Object}
          *        A backbone-style options
-         * @memberof embapi
-         * @see User
+         * @memberof hybrid
+         * @see Authentication
          */
-        getUser : function(options) {
-            return ajax.call(this, VERSION_1_0 + '/user', options || {});
+        getAuthentication : function(options) {
+            return ajax.call(this, VERSION_1_0 + '/auth', options || {});
         },
 
         /**
@@ -94,7 +122,7 @@
          * @param options {Object}
          *        A backbone-style options
          * @see Device
-         * @memberof embapi
+         * @memberof hybrid
          */
         getDevice : function(options) {
             return ajax.call(this, VERSION_1_0 + '/device', options || {});
@@ -106,7 +134,7 @@
          * @param options {Object}
          *        A backbone-style options
          * @see Network
-         * @memberof embapi
+         * @memberof hybrid
          */
         getActiveNetwork : function(options) {
             return ajax.call(this, VERSION_1_0 + '/connectivity/network', options || {});
@@ -119,12 +147,12 @@
          *        The target url
          * @param options {Object}
          *        A backbone-style options
-         * @memberof embapi
+         * @memberof hybrid
          */
         open : function(uri, params, options) {
             var args = Object.keys(params || {}).map(function(k) {
                 return k + '=' + encodeURIComponent(params[k] || '');
-            }).push('uri=' + encodeURIComponent(uri || '')).join('&');
+            }).push('uri=' + encodeURIComponent(uri || '')).join('&amp;');
             return ajax.call(this, VERSION_1_0 + '/open?' + args, options || {});
         },
 
@@ -132,3 +160,26 @@
 
 })(this);
 
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Agent.html">Agent</a></li><li><a href="Authentication.html">Authentication</a></li><li><a href="Device.html">Device</a></li><li><a href="Network.html">Network</a></li></ul><h3>Namespaces</h3><ul><li><a href="hybrid.html">hybrid</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.0-beta1</a> on Thu Jul 23 2015 16:11:27 GMT+0800 (CST)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
