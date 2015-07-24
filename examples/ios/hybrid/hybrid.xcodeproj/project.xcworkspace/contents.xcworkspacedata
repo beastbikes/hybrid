@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:EmbeddedAPI.xcodeproj">
+      location = "self:hybrid.xcodeproj">
    </FileRef>
 </Workspace>

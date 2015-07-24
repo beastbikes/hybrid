@@ -1,19 +1,19 @@
 //
-//  EmbeddedAPITests.m
-//  EmbeddedAPITests
+//  hybridTests.m
+//  hybridTests
 //
-//  Created by Johnson Lee on 11/5/15.
+//  Created by Johnson Lee on 24/7/15.
 //  Copyright (c) 2015 Beast Bikes. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface EmbeddedAPITests : XCTestCase
+@interface hybridTests : XCTestCase
 
 @end
 
-@implementation EmbeddedAPITests
+@implementation hybridTests
 
 - (void)setUp {
     [super setUp];

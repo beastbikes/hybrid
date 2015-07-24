@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C594E231B620FBD005D5AA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C594E221B620FBD005D5AA9 /* main.m */; };
+		2C594E261B620FBD005D5AA9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C594E251B620FBD005D5AA9 /* AppDelegate.m */; };
+		2C594E291B620FBD005D5AA9 /* hybrid.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C594E271B620FBD005D5AA9 /* hybrid.xcdatamodeld */; };
+		2C594E2F1B620FBD005D5AA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C594E2D1B620FBD005D5AA9 /* Main.storyboard */; };
+		2C594E311B620FBD005D5AA9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C594E301B620FBD005D5AA9 /* Images.xcassets */; };
+		2C594E341B620FBD005D5AA9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C594E321B620FBD005D5AA9 /* LaunchScreen.xib */; };
+		2C594E401B620FBD005D5AA9 /* hybridTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C594E3F1B620FBD005D5AA9 /* hybridTests.m */; };
+		2C594E4B1B621010005D5AA9 /* HybridURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C594E4A1B621010005D5AA9 /* HybridURLCache.m */; };
+		2C594E511B624828005D5AA9 /* hybrid.js in Resources */ = {isa = PBXBuildFile; fileRef = 2C594E501B624828005D5AA9 /* hybrid.js */; };
+		2C594E521B624828005D5AA9 /* hybrid.js in Resources */ = {isa = PBXBuildFile; fileRef = 2C594E501B624828005D5AA9 /* hybrid.js */; };
+		2C594E551B6259FE005D5AA9 /* HybridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C594E541B6259FE005D5AA9 /* HybridViewController.m */; };
+		2C594E561B6259FE005D5AA9 /* HybridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C594E541B6259FE005D5AA9 /* HybridViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C594E3A1B620FBD005D5AA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C594E151B620FBD005D5AA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C594E1C1B620FBD005D5AA9;
+			remoteInfo = hybrid;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C594E1D1B620FBD005D5AA9 /* hybrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hybrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C594E211B620FBD005D5AA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C594E221B620FBD005D5AA9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2C594E241B620FBD005D5AA9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2C594E251B620FBD005D5AA9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2C594E281B620FBD005D5AA9 /* hybrid.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = hybrid.xcdatamodel; sourceTree = "<group>"; };
+		2C594E2E1B620FBD005D5AA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C594E301B620FBD005D5AA9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2C594E331B620FBD005D5AA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2C594E391B620FBD005D5AA9 /* hybridTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hybridTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C594E3E1B620FBD005D5AA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C594E3F1B620FBD005D5AA9 /* hybridTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hybridTests.m; sourceTree = "<group>"; };
+		2C594E491B621010005D5AA9 /* HybridURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HybridURLCache.h; sourceTree = "<group>"; };
+		2C594E4A1B621010005D5AA9 /* HybridURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HybridURLCache.m; sourceTree = "<group>"; };
+		2C594E501B624828005D5AA9 /* hybrid.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = hybrid.js; path = ../../../../lib/hybrid.js; sourceTree = "<group>"; };
+		2C594E531B6259FE005D5AA9 /* HybridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HybridViewController.h; sourceTree = "<group>"; };
+		2C594E541B6259FE005D5AA9 /* HybridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HybridViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C594E1A1B620FBD005D5AA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C594E361B620FBD005D5AA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C594E141B620FBD005D5AA9 = {
+			isa = PBXGroup;
+			children = (
+				2C594E1F1B620FBD005D5AA9 /* hybrid */,
+				2C594E3C1B620FBD005D5AA9 /* hybridTests */,
+				2C594E1E1B620FBD005D5AA9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C594E1E1B620FBD005D5AA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C594E1D1B620FBD005D5AA9 /* hybrid.app */,
+				2C594E391B620FBD005D5AA9 /* hybridTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C594E1F1B620FBD005D5AA9 /* hybrid */ = {
+			isa = PBXGroup;
+			children = (
+				2C594E241B620FBD005D5AA9 /* AppDelegate.h */,
+				2C594E251B620FBD005D5AA9 /* AppDelegate.m */,
+				2C594E491B621010005D5AA9 /* HybridURLCache.h */,
+				2C594E4A1B621010005D5AA9 /* HybridURLCache.m */,
+				2C594E531B6259FE005D5AA9 /* HybridViewController.h */,
+				2C594E541B6259FE005D5AA9 /* HybridViewController.m */,
+				2C594E2D1B620FBD005D5AA9 /* Main.storyboard */,
+				2C594E301B620FBD005D5AA9 /* Images.xcassets */,
+				2C594E321B620FBD005D5AA9 /* LaunchScreen.xib */,
+				2C594E271B620FBD005D5AA9 /* hybrid.xcdatamodeld */,
+				2C594E201B620FBD005D5AA9 /* Supporting Files */,
+			);
+			path = hybrid;
+			sourceTree = "<group>";
+		};
+		2C594E201B620FBD005D5AA9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C594E4C1B6247DC005D5AA9 /* hybrid */,
+				2C594E211B620FBD005D5AA9 /* Info.plist */,
+				2C594E221B620FBD005D5AA9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2C594E3C1B620FBD005D5AA9 /* hybridTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C594E3F1B620FBD005D5AA9 /* hybridTests.m */,
+				2C594E3D1B620FBD005D5AA9 /* Supporting Files */,
+			);
+			path = hybridTests;
+			sourceTree = "<group>";
+		};
+		2C594E3D1B620FBD005D5AA9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C594E3E1B620FBD005D5AA9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2C594E4C1B6247DC005D5AA9 /* hybrid */ = {
+			isa = PBXGroup;
+			children = (
+				2C594E501B624828005D5AA9 /* hybrid.js */,
+			);
+			name = hybrid;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C594E1C1B620FBD005D5AA9 /* hybrid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C594E431B620FBD005D5AA9 /* Build configuration list for PBXNativeTarget "hybrid" */;
+			buildPhases = (
+				2C594E191B620FBD005D5AA9 /* Sources */,
+				2C594E1A1B620FBD005D5AA9 /* Frameworks */,
+				2C594E1B1B620FBD005D5AA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hybrid;
+			productName = hybrid;
+			productReference = 2C594E1D1B620FBD005D5AA9 /* hybrid.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C594E381B620FBD005D5AA9 /* hybridTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C594E461B620FBD005D5AA9 /* Build configuration list for PBXNativeTarget "hybridTests" */;
+			buildPhases = (
+				2C594E351B620FBD005D5AA9 /* Sources */,
+				2C594E361B620FBD005D5AA9 /* Frameworks */,
+				2C594E371B620FBD005D5AA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C594E3B1B620FBD005D5AA9 /* PBXTargetDependency */,
+			);
+			name = hybridTests;
+			productName = hybridTests;
+			productReference = 2C594E391B620FBD005D5AA9 /* hybridTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C594E151B620FBD005D5AA9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Beast Bikes";
+				TargetAttributes = {
+					2C594E1C1B620FBD005D5AA9 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					2C594E381B620FBD005D5AA9 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 2C594E1C1B620FBD005D5AA9;
+					};
+				};
+			};
+			buildConfigurationList = 2C594E181B620FBD005D5AA9 /* Build configuration list for PBXProject "hybrid" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C594E141B620FBD005D5AA9;
+			productRefGroup = 2C594E1E1B620FBD005D5AA9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C594E1C1B620FBD005D5AA9 /* hybrid */,
+				2C594E381B620FBD005D5AA9 /* hybridTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C594E1B1B620FBD005D5AA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C594E2F1B620FBD005D5AA9 /* Main.storyboard in Resources */,
+				2C594E341B620FBD005D5AA9 /* LaunchScreen.xib in Resources */,
+				2C594E511B624828005D5AA9 /* hybrid.js in Resources */,
+				2C594E311B620FBD005D5AA9 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C594E371B620FBD005D5AA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C594E521B624828005D5AA9 /* hybrid.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C594E191B620FBD005D5AA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C594E551B6259FE005D5AA9 /* HybridViewController.m in Sources */,
+				2C594E291B620FBD005D5AA9 /* hybrid.xcdatamodeld in Sources */,
+				2C594E261B620FBD005D5AA9 /* AppDelegate.m in Sources */,
+				2C594E4B1B621010005D5AA9 /* HybridURLCache.m in Sources */,
+				2C594E231B620FBD005D5AA9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C594E351B620FBD005D5AA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C594E561B6259FE005D5AA9 /* HybridViewController.m in Sources */,
+				2C594E401B620FBD005D5AA9 /* hybridTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C594E3B1B620FBD005D5AA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C594E1C1B620FBD005D5AA9 /* hybrid */;
+			targetProxy = 2C594E3A1B620FBD005D5AA9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2C594E2D1B620FBD005D5AA9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C594E2E1B620FBD005D5AA9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2C594E321B620FBD005D5AA9 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C594E331B620FBD005D5AA9 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C594E411B620FBD005D5AA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C594E421B620FBD005D5AA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C594E441B620FBD005D5AA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = hybrid/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2C594E451B620FBD005D5AA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = hybrid/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2C594E471B620FBD005D5AA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = hybridTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hybrid.app/hybrid";
+			};
+			name = Debug;
+		};
+		2C594E481B620FBD005D5AA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = hybridTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hybrid.app/hybrid";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C594E181B620FBD005D5AA9 /* Build configuration list for PBXProject "hybrid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C594E411B620FBD005D5AA9 /* Debug */,
+				2C594E421B620FBD005D5AA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C594E431B620FBD005D5AA9 /* Build configuration list for PBXNativeTarget "hybrid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C594E441B620FBD005D5AA9 /* Debug */,
+				2C594E451B620FBD005D5AA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C594E461B620FBD005D5AA9 /* Build configuration list for PBXNativeTarget "hybridTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C594E471B620FBD005D5AA9 /* Debug */,
+				2C594E481B620FBD005D5AA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2C594E271B620FBD005D5AA9 /* hybrid.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2C594E281B620FBD005D5AA9 /* hybrid.xcdatamodel */,
+			);
+			currentVersion = 2C594E281B620FBD005D5AA9 /* hybrid.xcdatamodel */;
+			path = hybrid.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2C594E151B620FBD005D5AA9 /* Project object */;
+}

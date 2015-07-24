@@ -1,9 +1,9 @@
 <html>
     <head>
-        <script type="text/javascript" src="/1.0/embedded.js"></script>
+        <script type="text/javascript" src="/hybrid/1.0/hybrid.js"></script>
         <script type="text/javascript">
             function getDevice() {
-                return embapi.getDevice({
+                return hybrid.getDevice({
                     success : function(device) {
                         document.getElementById('console').innerText = JSON.stringify(device);
                     },
@@ -13,8 +13,8 @@
                 });
             }
 
-            function getUser() {
-                return embapi.getUser({
+            function getAuthentication() {
+                return hybrid.getAuthentication({
                     success : function(user) {
                         document.getElementById('console').innerText = JSON.stringify(user);
                     },
@@ -30,7 +30,7 @@
         <h2 id="console"></h2>
         <ul>
             <li><a href="javascript:void(0)" onclick="getDevice()">getDevice</a></li>
-            <li><a href="javascript:void(0)" onclick="getUser()">getUser</a></li>
+            <li><a href="javascript:void(0)" onclick="getAuthentication()">getUser</a></li>
         </ul>
     </body>
 </html>
